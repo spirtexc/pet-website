@@ -1,0 +1,395 @@
+/* Reset and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Header styles */
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background for header */
+    z-index: 99;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+
+}
+
+.navbar-nav {
+    /*flex-direction: row;
+    flex-wrap: nowrap;
+    display: flex;
+    align-items: center; */
+    justify-content: space-around;
+    display: flex;
+    width: 100%;
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+    color: #007bff; /* Primary color */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar-toggler {
+    border: none;
+    background-color: transparent;
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>');
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-nav {
+        justify-content: space-around;
+        display: flex;
+        width: 100%;
+    }
+
+
+.nav-item {
+    margin-right: 20px;
+}
+
+.nav-link {
+    font-size: 1em;
+    color: #333;
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    color: #007bff; /* Primary color for hover */
+}
+
+.dropdown-menu {
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.dropdown-item {
+    color: #333;
+}
+
+.dropdown-item:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.btnLogin-popup {
+    background-color: wheat; /* Primary color */
+    color: white;
+    border: 2px solid #007bff;
+    border-radius: 7px;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btnLogin-popup:hover {
+    background-color: white;
+    color: #007bff; /* Change text color on hover */
+}
+
+/* Appointment section styles */
+.appointment-section {
+    padding: 60px 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 900px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.btnsubmit {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btnsubmit:hover {
+    background-color: #0056b3;
+}
+
+.btnsubmit-secondary {
+    background-color: #6c757d;
+}
+
+.btnsubmit-secondary:hover {
+    background-color: #5a6268;
+}
+
+.image-section {
+    width: 100%;
+    text-align: center; /* Center the image horizontally */
+    margin-top: 60px; /* Space between the navbar and image */
+}
+
+.image-section img {
+    max-width: 100%; /* Ensure the image fits within the section */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    margin-bottom: 30px; /* Space between the image and the form */
+}
+
+.photo-section {
+    text-align: center;
+    padding: 2em 1em;
+}
+
+.photo-section img {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #333;
+}
+
+.description-box {
+    width: 50%; /* Half of the page */
+    margin: 2em auto; /* Centered with space around */
+    padding: 2em 3em; /* Added more padding, especially on the left and right */
+    background-color: #fefefe; /* Clean, bright background */
+    border: 2px solid #ddd; /* Thin border with subtle contrast */
+    border-radius: 12px; /* Softer, larger rounded corners */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Soft, deep shadow for elegance */
+    float: left;
+    color: #2c3e50; /* Dark, sophisticated text color */
+    font-family: 'Georgia', serif; /* Elegant serif font */
+    line-height: 1.8; /* Ample spacing for high readability */
+    margin-left: 20px; /* Add some space from the left side */
+}
+
+.description-box h2 {
+    font-size: 2em;
+    color: #1c2833; /* Rich, deep color for the header */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    text-align: center; /* Centered header for a balanced look */
+    font-family: 'Times New Roman', serif; /* Classic font for the title */
+    letter-spacing: 1px; /* Small letter spacing for sophistication */
+    font-weight: bold;
+}
+
+.description-box h3 {
+    font-size: 1.5em;
+    color: #34495e;
+    margin-bottom: 1em;
+    border-bottom: 2px solid #bdc3c7; /* Subtle accent with soft contrast */
+    padding-bottom: 0.4em;
+}
+
+.description-box p {
+    line-height: 1.8; /* Generous line spacing for an airy feel */
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+    color: #2c3e50; /* Refined dark gray for body text */
+}
+
+.description-box ul {
+    padding-left: 1.5em;
+    list-style-type: none; /* Removes default bullet points */
+    font-size: 1.2em;
+    color: #34495e;
+}
+
+.description-box ul li {
+    margin-bottom: 1em;
+    position: relative;
+    padding-left: 1.5em;
+}
+
+.description-box ul li:before {
+    content: '♦'; /* Diamond symbol for luxury */
+    color: #e67e22; /* Gold-like accent color */
+    position: absolute;
+    left: 0;
+    font-size: 1.2em;
+    top: 0;
+}
+
+.description-box a {
+    color: #2980b9; /* Subtle but striking link color */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.description-box a:hover {
+    color: #e67e22; /* Changes to the accent gold-like color on hover */
+    text-decoration: underline;
+}
+
+.appointment-form {
+    width: 40%; /* Adjust width as needed */
+    margin: 2em 1em;
+    padding: 2em;
+    background-color: #fefefe; /* White background for a clean look */
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Elegant shadow */
+    float: right; /* Floats the form to the right side */
+    color: #2c3e50;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+.appointment-form h2 {
+    font-size: 1.8em;
+    color: #1c2833;
+    margin-bottom: 1em;
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+}
+
+.appointment-form label {
+    display: block;
+    font-size: 1.2em;
+    color: #34495e;
+    margin-bottom: 0.5em;
+}
+
+.appointment-form select, 
+.appointment-form input[type="text"] {
+    width: 100%;
+    padding: 0.8em;
+    font-size: 1em;
+    margin-bottom: 1.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+}
+
+.appointment-form input[type="date"] {
+    width: 100%;
+    padding: 0.8em;
+    font-size: 1em;
+    margin-bottom: 1.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+}
+
+.appointment-form button {
+    display: block;
+    width: 100%;
+    padding: 0.8em;
+    font-size: 1.2em;
+    background-color: #e67e22; /* Accent color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.appointment-form button:hover {
+    background-color: #d35400; /* Darker accent on hover */
+}
+
+.pika-single {
+    width: 510px !important; /* Ensure width is correct */
+    font-size: 18px !important; /* Adjust font size */
+}
+.pika-lendar {
+    width: 100% !important; /* Ensure the calendar width fits its container */
+}
+.pika-table {
+    width: 97% !important; /* Adjust width of the day cells */
+}
+
+.xdsoft_datetimepicker {
+    position:absolute;
+    display: flex;
+    top: 100%;
+    flex-direction: column;
+    width: 510px;
+}
+
+.xdsoft_calendar {
+    width: 220%; /* Ensure the width is applied */
+    box-sizing: border-box;
+}
+
+.xdsoft_timepicker {
+    width: 100% !important; /* Ensure the width is applied */
+    box-sizing: border-box;
+    margin-top: 10px; /* Space between date and time picker */
+}
+.user-profile {
+    display: flex;
+    align-items: center;
+    cursor: pointer; /* Change cursor to pointer for clickable area */
+    margin-left: auto; /* Pushes the profile to the right */
+}
+
+.username {
+    font-size: 18px;
+    color: #2c3e50; /* Match your theme */
+    margin-right: 10px; /* Spacing between username and icon */
+}
+
+.profile-icon {
+    width: 24px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+}

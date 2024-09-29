@@ -1,0 +1,72 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8; /* Light background color */
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff; /* White background for the container */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.confirmation-title {
+    text-align: center;
+    color: #4a90e2; /* Blue color for the title */
+    margin-bottom: 20px;
+}
+
+.description {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #555; /* Darker grey for description text */
+}
+
+.payment-section {
+    margin: 20px 0;
+}
+
+.payment-label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333; /* Dark color for the label */
+}
+
+.payment-dropdown {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f8f9fa; /* Light grey background for dropdown */
+    color: #333; /* Dark text for dropdown */
+}
+
+.payment-dropdown option {
+    padding: 10px; /* Padding for dropdown options */
+}
+
+.payment-button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #4caf50; /* Green color for the button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.payment-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.payment-button:active {
+    background-color: #388e3c; /* Even darker green on active */
+}

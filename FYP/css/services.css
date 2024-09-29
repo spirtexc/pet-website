@@ -1,0 +1,205 @@
+/* Reset some default styles */
+body, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Modern font */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Dark text color for readability */
+    background-color: #f4f4f4; /* Light gray background for a subtle contrast */
+}
+
+.container {
+    padding: 40px; /* Increased padding for a spacious layout */
+}
+
+/* Full-Screen Image Section */
+.firstphoto {
+    position: relative;
+    width: 100%;
+    height: 80vh; /* Adjusted for balance */
+    margin-top: 90px;
+    overflow: hidden;
+}
+
+.firstphoto img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(60%); /* Slightly darker for better text readability */
+}
+.navbar-nav {
+    /*flex-direction: row;
+    flex-wrap: nowrap;
+    display: flex;
+    align-items: center; */
+    justify-content: space-around;
+    display: flex;
+    width: 100%;
+}
+/* Header Styles */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    background-color: #ffffff; /* White background for clarity */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.logo {
+    font-size: 36px;
+    color: #2c3e50; /* Deep navy blue for a sophisticated look */
+    background-color: #ffffff;
+    padding: 10px 20px;
+    text-align: center;
+    user-select: none;
+    font-weight: bold;
+}
+
+/* Navbar Styles */
+.navbar-custom {
+    background-color: #ffffff !important; /* White background for the navbar */
+}
+
+.navigation a {
+    font-size: 18px;
+    color: #2c3e50; /* Deep navy blue for links */
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 15px;
+    position: relative;
+    padding: 10px 0;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background: #2c3e50; /* Deep navy blue underline */
+    border-radius: 2px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease;
+}
+
+.navigation a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* Section Styles */
+.section {
+    margin-bottom: 60px; /* Increased margin for separation */
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50; /* Deep navy blue for headings */
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.box {
+    display: flex;
+    align-items: center; /* Center-aligned items */
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #ffffff; /* White background for boxes */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-top: 20px;
+}
+
+.box img {
+    width: 180px; /* Adjusted width */
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px; /* Rounded corners for images */
+}
+
+.box-content {
+    flex: 1;
+}
+
+.box p {
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    background-color: #34495e; /* Charcoal gray for a high-class touch */
+    color: #ffffff;
+    padding: 14px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: #2c3e50; /* Slightly darker charcoal gray on hover */
+}
+
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    cursor: pointer; /* Change cursor to pointer for clickable area */
+    margin-left: auto; /* Pushes the profile to the right */
+}
+
+.username {
+    font-size: 18px;
+    color: #2c3e50; /* Match your theme */
+    margin-right: 10px; /* Spacing between username and icon */
+}
+
+.profile-icon {
+    width: 24px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+@media (max-width: 750px) {
+    .navbar-nav {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+        width: 100%;
+        padding: 10px 0; /* Add padding for spacing */
+    }
+
+    .nav-item {
+        margin: 5px 0; /* Space between items */
+        text-align: center; /* Center text */
+        width: 100%; /* Ensure full width for easy clicking */
+    }
+}
+
+@media (min-width: 820px) and (max-width: 1024px) {
+    .navbar-nav {
+        flex-direction: row; /* Row layout */
+        justify-content: center; /* Center the items */
+    }
+
+    .nav-item {
+        margin: 0 15px; /* Adjust margins for spacing */
+        text-align: center; /* Center text */
+    }
+}
