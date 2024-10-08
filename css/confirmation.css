@@ -1,0 +1,135 @@
+/* confirmation.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9; /* Light background */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.container:hover {
+    transform: scale(1.02); /* Slight zoom effect on hover */
+}
+
+h1.confirmation-title {
+    text-align: center;
+    color: #1c2833; /* Darker color for a sophisticated look */
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Uppercase for emphasis */
+    letter-spacing: 1px; /* Slightly spaced letters */
+}
+
+.description {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #e67e22; /* Soft orange */
+    font-weight: bold; /* Make description bold */
+}
+
+.order-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.order-table th {
+    padding: 12px;
+    text-align: left;
+    background-color: #e67e22; /* Your specified color for header */
+    color: white; /* White text */
+    border-radius: 4px 4px 0 0; /* Rounded top corners */
+}
+
+.order-table td {
+    padding: 12px;
+    text-align: left;
+    background-color: #f39c12; /* Your specified color for data cells */
+    color: white; /* White text for better contrast */
+    border-bottom: 1px solid #ddd;
+}
+
+.order-table tr:hover {
+    background-color: #d5e5e5; /* Highlight row on hover */
+}
+
+.payment-section {
+    margin-top: 20px;
+}
+
+.payment-label {
+    font-weight: bold;
+}
+
+.payment-dropdown {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 5px;
+    transition: border-color 0.3s; /* Smooth border color transition */
+}
+
+.payment-dropdown:focus {
+    border-color: #e67e22; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+.payment-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #e67e22; /* Orange for the button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+.payment-button:hover {
+    background-color: #d35400; /* Darker orange on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.return-button {
+    background-color: #f44336; /* Red for return button */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.return-button:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1.confirmation-title {
+        font-size: 24px;
+    }
+
+    .payment-button, .return-button {
+        font-size: 16px;
+    }
+}
